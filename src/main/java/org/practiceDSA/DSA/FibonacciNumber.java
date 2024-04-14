@@ -1,4 +1,4 @@
-package org.practiseDSA.DSA;
+package org.practiceDSA.DSA;
 
 import java.util.Scanner;
 

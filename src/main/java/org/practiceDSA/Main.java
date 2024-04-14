@@ -1,4 +1,4 @@
-package org.practiseDSA;
+package org.practiceDSA;
 
 public class Main {
     public static void main(String[] args) {

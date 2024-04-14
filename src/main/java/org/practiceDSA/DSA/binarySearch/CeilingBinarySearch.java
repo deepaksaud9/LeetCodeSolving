@@ -1,45 +1,41 @@
-package org.practiseDSA.DSA.binarySearch;
+package org.practiceDSA.DSA.binarySearch;
 
-public class FloorBinarySearch {
+public class CeilingBinarySearch {
+
     public static void main(String[] args) {
-        int[] arr = {3,5,7,9,11};
-        int target = 1;
-        System.out.println(floor(arr, target));
-        System.out.println(arr.length);
+        int[] arr = {1,3,5,7,9,11};
+        int target = 10;
+        System.out.println(ceiling(arr, target));
     }
 
-    private static int floor(int[] arr, int target) {
-
+    static int ceiling(int[] arr, int target){
         if (target > arr[arr.length - 1]){
             return -1;
         }
+
         int start = 0;
-        int end = arr.length - 1;
+        int end = arr.length-1;
 
         boolean isAsc = arr[start] < arr[end];
 
+
         while (start <= end){
             int mid = start + (end - start)/2;
-
             if (arr[mid] == target){
-                return target;
+                return mid;
             }
-
             if (isAsc){
-                if(target > arr[mid]){
+                if (target > arr[mid]){
                     start = mid + 1;
                 }else
                     end = mid - 1;
-
-                }else {
+            }else {
                 if (target > arr[mid]){
                     end = mid - 1;
                 }else
                     start = mid + 1;
-                    }
             }
-        return end;
         }
-
+        return start ;
     }
-
+}

@@ -1,4 +1,4 @@
-package org.practiseDSA.DSA;
+package org.practiceDSA.DSA;
 
 public class ArmStrongNumber {
 

@@ -1,4 +1,4 @@
-package org.practiseDSA.DSA.binarySearch;
+package org.practiceDSA.DSA.binarySearch;
 
 public class MountainArray {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.practiseDSA.DSA.binarySearch;
+package org.practiceDSA.DSA.binarySearch;
 import java.util.Arrays;
 
 public class FirstAndLastPosition {

@@ -1,4 +1,4 @@
-package org.practiseDSA.DSA.linearSearch;
+package org.practiceDSA.DSA.linearSearch;
 
 public class CountNum {
     public static void main(String[] args) {

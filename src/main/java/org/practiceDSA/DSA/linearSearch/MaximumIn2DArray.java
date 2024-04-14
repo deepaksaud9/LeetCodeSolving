@@ -1,4 +1,4 @@
-package org.practiseDSA.DSA.linearSearch;
+package org.practiceDSA.DSA.linearSearch;
 
 public class MaximumIn2DArray {
 
