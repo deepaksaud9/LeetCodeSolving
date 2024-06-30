@@ -2,7 +2,7 @@ package org.practiceDSA.BitwiseOperator;
 
 public class TestBitwiseOperator {
     public static void main(String[] args) {
-        int n = 1;
+        int n = 10;
         System.out.println("this is a right shift: " + rightShiftOperator(n));
         System.out.println("this is a left shifted : "+leftShiftOperator(n));
         System.out.println("this is bit AND : " + bitAnd(n));
@@ -11,10 +11,10 @@ public class TestBitwiseOperator {
     }
 
     static int rightShiftOperator(int n){
-        return n >> 2;
+        return n >> 1;
     }
     static int leftShiftOperator(int n){
-        return  n << 2;
+        return  n << 1;
     }
 
     static int bitAnd(int n){
