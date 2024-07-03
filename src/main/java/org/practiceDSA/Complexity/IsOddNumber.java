@@ -1,7 +1,4 @@
-package org.practiceDSA.practice;
-
-import java.util.ArrayList;
-import java.util.List;
+package org.practiceDSA.Complexity;
 
 public class IsOddNumber {
 

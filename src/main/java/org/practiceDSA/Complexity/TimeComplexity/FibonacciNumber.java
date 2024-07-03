@@ -1,4 +1,4 @@
-package org.practiceDSA.practice.Complexity;
+package org.practiceDSA.Complexity.TimeComplexity;
 
 public class FibonacciNumber {
 

@@ -1,4 +1,4 @@
-package org.practiceDSA.practice;
+package org.practiceDSA.Complexity;
 
 import java.util.ArrayList;
 import java.util.List;

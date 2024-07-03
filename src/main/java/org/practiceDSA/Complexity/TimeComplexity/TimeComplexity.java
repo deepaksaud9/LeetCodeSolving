@@ -1,4 +1,4 @@
-package org.practiceDSA.practice;
+package org.practiceDSA.Complexity.TimeComplexity;
 
 public class TimeComplexity {
 

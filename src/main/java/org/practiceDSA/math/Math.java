@@ -1,4 +1,4 @@
-package org.practiceDSA.practice;
+package org.practiceDSA.math;
 
 public class Math {
 
