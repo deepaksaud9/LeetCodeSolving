@@ -11,7 +11,7 @@ public class Main {
         System.out.println(hari.population);
 //        System.out.println(Human.population);
 
-        display();
+//        display();
         Main call =  new Main();
         call.non_static();
     }
@@ -33,6 +33,7 @@ public class Main {
 
     void non_static(){
         System.out.println(" i am non-static method");
+        greeting1();
         iAmStatic();
 
     }
