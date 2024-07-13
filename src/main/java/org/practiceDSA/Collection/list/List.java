@@ -1,4 +1,4 @@
-package org.practiceDSA.Collection;
+package org.practiceDSA.Collection.list;
 
 import java.util.LinkedList;
 
