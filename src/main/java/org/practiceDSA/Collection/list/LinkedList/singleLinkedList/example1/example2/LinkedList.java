@@ -1,4 +1,4 @@
-package org.practiceDSA.Collection.list.LinkedList.example2;
+package org.practiceDSA.Collection.list.LinkedList.singleLinkedList.example1.example2;
 
 public class LinkedList {
 
@@ -39,4 +39,5 @@ public class LinkedList {
     public void incrementSize(){
         this.size += 1;
     }
+    public void decrementSize(){this.size -= 1; }
 }

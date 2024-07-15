@@ -1,6 +1,4 @@
-package org.practiceDSA.Collection.list.LinkedList.example1;
-
-import org.practiceDSA.Collection.list.LinkedList.example1.LL;
+package org.practiceDSA.Collection.list.LinkedList.singleLinkedList.example1;
 
 public class Main {
 
@@ -16,5 +14,5 @@ public class Main {
         System.out.println(" ----------------->");
         list.insertAtPosition(2,2);
         list.display();
-    }
+            }
 }

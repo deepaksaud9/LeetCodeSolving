@@ -1,4 +1,4 @@
-package org.practiceDSA.Collection.list.LinkedList.example2;
+package org.practiceDSA.Collection.list.LinkedList.singleLinkedList.example1.example2;
 
 public class LinkedListService {
 
@@ -58,6 +58,62 @@ public class LinkedListService {
             temp = temp.getNext();
         }
         System.out.println("End");
+    }
 
+    public Node getNode(int index){
+       Node node = list.getHead();
+       for (int i = 0; i < index; i++){
+            node = node.getNext();
+       }
+       return node;
+    }
+
+    public String deleteFirst(){
+       String data = list.getHead().getData();
+       list.setHead(list.getHead().getNext());
+       if (list.getHead() == null){
+           list.setTail(null);
+       }
+       list.decrementSize();
+
+       return data;
+    }
+
+    public String deleteLast(){
+
+        if (list.getTail() == null){
+            return "already empty";
+        }
+       if (list.getSize() <= 1){
+           return deleteFirst();
+       }
+
+       if (list.getHead() == list.getTail()){
+           list.setHead(null);
+           list.setTail(null);
+       }
+       Node secondLast = getNode(list.getSize() - 2);
+       String data = list.getTail().getData();
+       list.setTail(secondLast);
+       list.getTail().setNext(null);
+       return data;
+    }
+
+    public String deleteByIndex(int index){
+
+       if (index < 0 || index > list.getSize()){
+           throw new IndexOutOfBoundsException("invalid index");
+       }
+       if (index == 0 ){
+           deleteFirst();
+       }
+       if (index == list.getSize()){
+           deleteLast();
+       }
+
+       Node prev = getNode(index - 1);
+       String data = prev.getNext().getData();
+       prev.setNext(prev.getNext().getNext());
+        return data;
     }
 }

@@ -1,4 +1,4 @@
-package org.practiceDSA.Collection.list.LinkedList.example2;
+package org.practiceDSA.Collection.list.LinkedList.singleLinkedList.example1.example2;
 
 public class Node {
         private String data;

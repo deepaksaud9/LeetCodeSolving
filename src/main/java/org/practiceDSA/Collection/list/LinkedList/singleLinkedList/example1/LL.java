@@ -1,4 +1,4 @@
-package org.practiceDSA.Collection.list.LinkedList.example1;
+package org.practiceDSA.Collection.list.LinkedList.singleLinkedList.example1;
 
 public class LL {
 
@@ -47,15 +47,34 @@ public class LL {
             return;
         }
 
-        Node node = new Node(val);
+
         Node temp = head;
 
         for (int i = 1; i < position; i++){
             temp = temp.next;
         }
-        node.next = temp.next;
+        Node node = new Node(val,temp.next);
+//        node.next = temp.next;
         temp.next = node;
         size += 1;
+    }
+
+
+    public int deleteLast(){
+        Node secondLastNode = getNode(size - 2);
+        int value = tail.value;
+        tail = secondLastNode;
+        tail.next = null;
+        size--;
+        return value;
+    }
+
+    public Node getNode(int index){
+        Node node = head;
+        for (int i = 0; i < index; i++){
+            node = node.next;
+        }
+        return node;
     }
 
     public void display(){
